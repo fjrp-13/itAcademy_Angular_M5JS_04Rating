@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rating Stars</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body onclick="selectStar(null, event);">
+    <div class="container">
+        <div class="rating">
+            <!-- Inverso para poder usar el RTL -->
+            <span class="star" data-star="5" onclick="selectStar(this, event);">&star;</span>
+            <span class="star" data-star="4" onclick="selectStar(this, event);">&star;</span>
+            <span class="star" data-star="3" onclick="selectStar(this, event);">&star;</span>
+            <span class="star" data-star="2" onclick="selectStar(this, event);">&star;</span>
+            <span class="star" data-star="1" onclick="selectStar(this, event);">&star;</span>
+        </div>
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

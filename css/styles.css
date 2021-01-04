@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.container {
+    margin-top: 10rem;
+    text-align: center;
+    font-size: 7rem;
+    color: #cccccc;
+}
+
+/* https://css-tricks.com/star-ratings/ */
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+/* hover sobre la estrella */
+.rating>span:hover,
+.rating>span:hover~span {
+    cursor: pointer;
+    color: gold;
+}
+
+/* estrella seleccionada y "hermanos anteriores" (gracias al RTL) */
+.rating>span.selected,
+.rating>span.selected~span {
+    color: gold !important;
+}
